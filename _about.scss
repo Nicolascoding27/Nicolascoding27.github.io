@@ -1,0 +1,118 @@
+.phone{
+    
+    img{
+        width:320px;
+        
+    }
+}
+.topics{
+    h2{
+        font-weight: 900;
+        width: 288px;
+        padding: 48px 16px 0px 16px;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-family: $font;
+    }
+}
+.grid-topics{
+    width:100%;
+    display: grid;
+    grid-column: 1fr;
+    justify-content: center;
+    row-gap: 36px;
+    padding-top: 37px;
+    padding-bottom: 42px;
+    .img-topic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:24px;
+        p{
+            text-align: center;
+            font-family: 'IBM Plex Sans-SemiBold', sans-serif;
+            font-size: 24px;
+            color: #060A24;
+            width: 288px;
+            font-weight: 700;
+        }
+        
+    }
+  
+    
+}
+@media  screen and (min-width:1200px) {
+    .phone{
+          width:458px;  
+    }
+    .topics{
+        transform: translateY(-90px);
+        display: flex;
+        flex-flow:column wrap;
+        align-self: center;
+        color:#060A24;
+        width: 100%;
+        h2{
+            font-size: 48px;
+            white-space: nowrap;
+            padding-left: $margin-big;
+            padding-top:64px;
+            font-weight: 400;
+        }
+    }
+    .grid-topics{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 66px $margin-big;
+        align-self: center;
+        gap: 78px 0px;
+        .img-topic{
+        p{
+            width: 220px;
+            margin-top:29px;
+        }
+    }
+
+    }
+    
+}
+@media  screen and (min-width:768px) {
+    .phone{
+          width:458px;  
+    }
+    .topics{
+        transform: translateY(-90px);
+        display: flex;
+        flex-flow:column wrap;
+        align-self: center;
+        width: 400px;
+        color:#060A24;
+        width: 100%;
+        h2{
+            font-size: 48px;
+            white-space: nowrap;
+            padding-top:64px;
+            font-weight: 400;
+        }
+    }
+    .grid-topics{
+        
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        // padding: 66px $margin-big;
+        width:100px;
+        align-self: center;
+        gap:20px 20px;
+        .img-topic{
+            padding:20px 20px;
+       P{
+           width:150px;
+       }
+    }
+
+    }
+    
+}

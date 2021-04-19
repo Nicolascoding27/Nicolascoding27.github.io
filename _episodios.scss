@@ -1,0 +1,52 @@
+.episodios-fondo{
+        // position: relative;
+        background-image: $gradient;
+        clip-path: polygon(0% calc(0% + 7vw), 100% 0%, 100% calc(100% - 7vw), 0% 100%);
+        height: 1200px;
+        width: 100%;
+        margin-top: 24px;
+        font-family: $font;
+        .episodios-titulo{
+            font-family: $font;
+            padding-top:64px;
+            padding-left: 16px;
+            color: white;//change
+            font-weight: 600;
+            font-size:36px;
+            padding: 64px 0px 21px 16px;
+            line-height: 42px;
+        }
+    .grid-podcast{
+        display:grid;
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        row-gap:11px;
+        padding:0px 11px;
+        .podcast{
+            border: none;
+            width: 100%;
+            height: 232px;
+        }
+    }
+    }
+    @media screen and (min-width:768px){
+        .episodios-fondo{
+            height: 1042px;
+            .episodios-titulo{
+                margin-left: $margin-big;
+                font-family: $font;
+                font-size: 48px;
+                padding-top: 186px;
+            }
+        .grid-podcast{ 
+            display:grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 72px 72px;
+            row-gap: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+            
+        }
+    }
+    }
